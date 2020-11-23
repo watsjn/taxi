@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default ({ router }) => {
+const Header = ({ router }) => {
   return (
     <div
       style={{
@@ -24,3 +24,5 @@ export default ({ router }) => {
     </div>
   )
 }
+
+export default Header

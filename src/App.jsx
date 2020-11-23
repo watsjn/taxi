@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Header from './parts/header'
-import Login from './pages/login'
-import Map from './pages/map'
-import Profile from './pages/profile'
-import Registration from './pages/registration'
+import Header from './parts/Header'
+import Login from './pages/Login'
+import Map from './pages/Map'
+import Profile from './pages/Profile'
+import Registration from './pages/Registration'
 
 function App() {
   const [currentRoute, setCurrentRoute] = useState('login')

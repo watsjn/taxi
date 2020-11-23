@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default ({ router }) => {
+const Registration = ({ router }) => {
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [password, setPassword] = useState('')
@@ -22,15 +22,15 @@ export default ({ router }) => {
       >
         <label style={{ marginBottom: '1rem' }}>
           Email:
-          <input type="email" value={email} onChange={setEmail} />
+          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
         </label>
         <label style={{ marginBottom: '1rem' }}>
           Name:
-          <input type="name" value={name} onChange={setName} />
+          <input type="name" value={name} onChange={(e) => setName(e.target.value)} />
         </label>
         <label style={{ marginBottom: '1rem' }}>
           Password:
-          <input type="password" value={password} onChange={setPassword} />
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </label>
         <div style={{ marginBottom: '1rem' }}>
           <input type="submit" value="Submit" />
@@ -39,3 +39,5 @@ export default ({ router }) => {
     </>
   )
 }
+
+export default Registration
