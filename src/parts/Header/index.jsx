@@ -15,7 +15,10 @@ const Header = ({ router }) => {
             }}
             key={i}
             href="#"
-            onClick={() => router.goTo(route)}
+            onClick={(e) => {
+              e.preventDefault()
+              router.goTo(route)
+            }}
           >
             {route}
           </a>
