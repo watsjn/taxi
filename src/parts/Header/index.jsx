@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const Header = ({ router }) => {
   return (
@@ -26,6 +27,10 @@ const Header = ({ router }) => {
       })}
     </div>
   )
+}
+
+Header.propTypes = {
+  router: PropTypes.object.isRequired,
 }
 
 export default Header
